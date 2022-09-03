@@ -4,18 +4,18 @@ Defalut()
 function Defalut(){
 
 // window.addEventListener('click', ()=>{
-    let long;
-    let lat;
+    // let long;
+    // let lat;
     let temperaturDescription=document.querySelector(".description")
     let temperature=document.querySelector(".degree")
     let locationTimezone=document.querySelector(".location-timezone")
 
-    if(navigator.geolocation){
-          navigator.geolocation.getCurrentPosition(position=>{
-              console.log(position);
-              long=position.coords.longitude
-              lat=position.coords.latitude
-              console.log(`${long}`)
+    // if(navigator.geolocation){
+    //       navigator.geolocation.getCurrentPosition(position=>{
+    //           console.log(position);
+    //           long=position.coords.longitude
+    //           lat=position.coords.latitude
+    //           console.log(`${long}`)
 
               const api=`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchedCity.city}?key=D4NZ58D2C2N6DZCHV88ZBLDE2`
             // D4NZ58D2C2N6DZCHV88ZBLDE2
@@ -40,7 +40,7 @@ function Defalut(){
             
             })
 
-          })
+        //   })
 
           function setIcons(icon, iconId){
               const skycons=new Skycons({color:"white"});
@@ -48,7 +48,7 @@ function Defalut(){
               skycons.play()
               return skycons.set(iconId, Skycons[currentIcon])
           }
-    }
+    // }
     // else{
     //     h1.textContent="dont work allow location acces"
     // }
