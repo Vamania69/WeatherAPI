@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather Dectectoe|</title>
+
+</head>
+
+<body>
+<div class="search">
+    <form >
+        <label>Search</label>
+        <input type="text" placeholder="search location" class="input">
+        <button type="button" class="search-btn">+</button>
+    </form>
+</div>
+    <div class="location">
+        <h1 class="location-timezone">Time Zone</h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="temperature">
+        <div class="degree-section">
+            <h2 class="degree">34</h2>
+            <span>F</span>
+
+        </div>
+        <div class="description">It cold</div>
+    </div>
+
+</body>
+<script src="./skycons.js"></script>
+<script src="./app.js"></script>
+
+</html>
